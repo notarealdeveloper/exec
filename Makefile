@@ -19,5 +19,5 @@ uninstall:
 	cargo uninstall
 
 check:
-	if [[ $$(printf "aaa\nbbb\nccc\n" | after  'b+') =~ ccc ]]; then echo yes; else echo no; fi
-	if [[ $$(printf "aaa\nbbb\nccc\n" | before 'b+') =~ aaa ]]; then echo yes; else echo no; fi
+	if [[ $$(printf "aaa\nbbb\nccc\n" | after  'b+') = ccc ]]; then echo yes; else echo no; fi
+	if [[ $$(printf "aaa\nbbb\nccc\n" | before 'b+') = aaa ]]; then echo yes; else echo no; fi
